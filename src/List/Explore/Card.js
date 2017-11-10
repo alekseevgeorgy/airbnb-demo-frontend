@@ -23,6 +23,7 @@ const Text = styled.p`
   font-family: Circular Air Bold, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 14px;
+  font-weight: 700;
   color: #383838;
 `;
 

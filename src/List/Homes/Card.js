@@ -22,6 +22,7 @@ const Price = styled.p`
   font-family: Circular Air Bold, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 16px;
+  font-weight: 700;
   color: #383838;
 `;
 
@@ -31,15 +32,17 @@ const Name = styled.p`
   font-family: Circular Air Bold, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 16px;
+  font-weight: 700;
   color: #383838;
 `;
 
-const Desciption = styled.p`
+const Description = styled.p`
   margin: 0;
   padding-bottom: 8px;
   font-family: Circular Air Light, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 14px;
+  font-weight: 300;
 `;
 
 const ReviewsWrapper = styled.div`
@@ -56,27 +59,21 @@ const Reviews = styled.p`
   font-family: Circular Air Book;
   font-size: 12px;
   line-height: 14px;
+  font-weight: 400;
   color: #383838;
   &middot;
 `;
-
-// function getStars(stars) {
-//   if (stars === 1) {
-//     return { star };
-//   } else {
-//     return `no rating`;
-//   }
-// }
 
 export default props => (
   <Wrapper>
     <Image src={props.src} />
     <TextWrapper>
-      <Price>{props.price}&nbsp;</Price>
+      <Price>${props.price}&nbsp;</Price>
       <Name>{props.name}</Name>
     </TextWrapper>
-    <Desciption>Entrie house &nbsp;&middot;&nbsp; {props.beds} beds</Desciption>
-    {/* {getStars(props.stars)}; */}
+    <Description>
+      Entire house &nbsp;&middot;&nbsp; {props.beds} beds
+    </Description>
     <ReviewsWrapper>
       <Stars src={star} />
       <Stars src={star} />

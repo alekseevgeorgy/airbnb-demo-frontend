@@ -16,6 +16,7 @@ const Title = styled.h2`
   font-family: Circular Air Bold, Helvetica, sans-serif;
   font-size: 1.5rem;
   line-height: 31px;
+  font-weight: 700;
   color: #383838;
 `;
 
@@ -27,6 +28,7 @@ const More = styled.button`
   font-family: Circular Air Book, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 24px;
+  font-weight: 400;
   color: #383838;
 
   &:after {
@@ -56,18 +58,18 @@ export default () => (
     </Wrapper>
     <CardsWrapper>
       <Card
-        price="$82"
+        price={82}
         name="La Salentina, see, nature…"
         src="https://a0.muscache.com/im/pictures/47939708/e55cd32e_original.jpg"
-        beds="9"
-        reviews="97"
+        beds={9}
+        reviews={97}
       />
       <Card
-        price="$82"
+        price={82}
         name="Your private 3 bert"
         src="https://a0.muscache.com/im/pictures/11424118/e1fb3923_original.jpg"
-        beds="5"
-        reviews="161"
+        beds={5}
+        reviews={161}
       />
     </CardsWrapper>
   </div>

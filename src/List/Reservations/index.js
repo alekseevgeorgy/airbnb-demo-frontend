@@ -15,6 +15,7 @@ const Title = styled.h2`
   font-family: Circular Air Bold, Helvetica, sans-serif;
   font-size: 1.5rem;
   line-height: 31px;
+  font-weight: 700;
   color: #383838;
 `;
 
@@ -26,6 +27,7 @@ const More = styled.button`
   font-family: Circular Air Book, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 24px;
+  font-weight: 400;
   color: #383838;
 
   &:after {
@@ -53,7 +55,7 @@ export default () => (
           src="https://a0.muscache.com/pictures/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg"
           description="Speakeasy"
           name="Chumley’s"
-          price="$60"
+          price={60}
         />
       </div>
       <div className="col-xs-6">
@@ -61,7 +63,7 @@ export default () => (
           src="https://a0.muscache.com/pictures/1494ed7e-9e3a-474b-9db6-bc150874fec7.jpg"
           description="Korean Gastropub"
           name="Hanjan"
-          price="$50"
+          price={50}
         />
       </div>
     </div>

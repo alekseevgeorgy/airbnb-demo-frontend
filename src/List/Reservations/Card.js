@@ -16,6 +16,7 @@ const Desciption = styled.small`
   font-family: Circular Air Bold, Helvetica, sans-serif;
   font-size: 8px;
   line-height: 9px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #383838;
 `;
@@ -27,6 +28,7 @@ const Name = styled.p`
   font-family: Circular Air Bold, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 700;
   color: #383838;
 `;
 
@@ -36,6 +38,7 @@ const Price = styled.p`
   font-family: Circular Air Light, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 14px;
+  font-weight: 300;
   color: #383838;
 `;
 
@@ -44,6 +47,6 @@ export default props => (
     <Image src={props.src} />
     <Desciption>{props.description}</Desciption>
     <Name>{props.name}</Name>
-    <Price>About {props.price} per person</Price>
+    <Price>About ${props.price} per person</Price>
   </Wrapper>
 );

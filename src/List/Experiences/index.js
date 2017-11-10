@@ -16,6 +16,7 @@ const Title = styled.h2`
   font-family: Circular Air Bold, Helvetica, sans-serif;
   font-size: 1.5rem;
   line-height: 31px;
+  font-weight: 700;
   color: #383838;
 `;
 
@@ -27,6 +28,7 @@ const More = styled.button`
   font-family: Circular Air Book, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 24px;
+  font-weight: 400;
   color: #383838;
 
   &:after {
@@ -53,17 +55,17 @@ export default () => (
         <div className="col-xs-6">
           <Card
             src="https://a0.muscache.com/im/pictures/40e6b9f8-7a3e-424d-a622-a70ed4309291.jpg"
-            price="$29"
+            price={29}
             name="Forest therapy"
-            reviews="44"
+            reviews={44}
           />
         </div>
         <div className="col-xs-6">
           <Card
             src="https://a0.muscache.com/im/pictures/87878152-fdce-425c-b807-b7909a23df1f.jpg?aki_policy=xl_poster"
-            price="$69"
+            price={69}
             name="Forest Whale watching"
-            reviews="46"
+            reviews={46}
           />
         </div>
       </div>

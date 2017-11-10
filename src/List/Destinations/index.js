@@ -15,13 +15,14 @@ const Title = styled.h2`
   font-family: Circular Air Bold, Helvetica, sans-serif;
   font-size: 1.5rem;
   line-height: 31px;
+  font-weight: 700;
   color: #383838;
 `;
 
 export default () => (
   <div className="container">
     <Wrapper>
-      <Title>Featured destination</Title>
+      <Title>Featured destinations</Title>
     </Wrapper>
     <div className="row">
       <div className="col-xs-4">

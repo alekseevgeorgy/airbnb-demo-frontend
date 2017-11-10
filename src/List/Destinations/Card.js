@@ -16,6 +16,7 @@ const Name = styled.p`
   font-family: Circular Air Bold, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 700;
   color: #383838;
 `;
 
