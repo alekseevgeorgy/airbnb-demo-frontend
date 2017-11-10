@@ -1,2 +1,2 @@
 # airbnb-demo-frontend
-Airbnb website for educational purposes. 
+Copy of airbnb website for educational purposes. 
