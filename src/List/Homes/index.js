@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
-import { Arrow } from "../UI/Arrow";
+import { Arrow, More } from "../UI";
 import MediaQuery from "react-responsive";
-import arrow from "../../img/arrow.svg";
 
 const Container = styled.div`
   margin-right: auto;
@@ -48,37 +47,6 @@ const Title = styled.h2`
     margin-top: 3rem;
     font-size: 32px;
     line-height: 34px;
-  }
-`;
-
-const More = styled.button`
-  border: none;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin-bottom: 1rem;
-  margin-right: 0.5rem;
-  font-family: Circular Air Book, Helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #383838;
-  background-color: #ffffff;
-
-  &:after {
-    content: "";
-    margin-left: 0.5rem;
-    background-color: #000000;
-    mask-image: url(${arrow});
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 11px;
-    height: 5.55px;
-    transform: rotate(270deg);
-  }
-
-  @media screen and (min-width: 48rem) {
-    font-size: 14px;
   }
 `;
 

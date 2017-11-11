@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import MediaQuery from "react-responsive";
-import { Arrow } from "../UI/Arrow";
+import { Arrow } from "../UI";
 import Card from "./Card";
 
 const Container = styled.div`
