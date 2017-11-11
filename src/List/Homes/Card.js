@@ -4,7 +4,8 @@ import star from "../../img/star.svg";
 
 const Wrapper = styled.a`
   display: block;
-  margin-right: 20px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 `;
 
 const Image = styled.img`
@@ -12,6 +13,16 @@ const Image = styled.img`
   display: flex;
   width: 196px;
   height: 156px;
+
+  @media screen and (min-width: 48rem) {
+    width: 304px;
+    height: 204px;
+  }
+
+  @media screen and (min-width: 62rem) {
+    width: 310px;
+    height: 204px;
+  }
 `;
 
 const TextWrapper = styled.div`padding: 8px 0 4px 0;`;
@@ -24,6 +35,11 @@ const Price = styled.p`
   line-height: 16px;
   font-weight: 700;
   color: #383838;
+
+  @media screen and (min-width: 48rem) {
+    line-height: 19px;
+    font-size: 15px;
+  }
 `;
 
 const Name = styled.p`
@@ -34,6 +50,11 @@ const Name = styled.p`
   line-height: 16px;
   font-weight: 700;
   color: #383838;
+
+  @media screen and (min-width: 48rem) {
+    line-height: 19px;
+    font-size: 15px;
+  }
 `;
 
 const Description = styled.p`
@@ -43,6 +64,11 @@ const Description = styled.p`
   font-size: 12px;
   line-height: 14px;
   font-weight: 300;
+
+  @media screen and (min-width: 48rem) {
+    line-height: 19px;
+    font-size: 15px;
+  }
 `;
 
 const ReviewsWrapper = styled.div`
@@ -72,7 +98,7 @@ export default props => (
       <Name>{props.name}</Name>
     </TextWrapper>
     <Description>
-      Entire house &nbsp;&middot;&nbsp; {props.beds} beds
+      Entire {props.type} &nbsp;&middot;&nbsp; {props.beds} beds
     </Description>
     <ReviewsWrapper>
       <Stars src={star} />

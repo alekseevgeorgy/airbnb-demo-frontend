@@ -3,7 +3,7 @@ import Explore from "./Explore";
 import Experiences from "./Experiences";
 import Homes from "./Homes";
 import Reservations from "./Reservations";
-import Destionations from "./Destinations";
+import Destinations from "./Destinations";
 
 export default () => (
   <div>
@@ -11,6 +11,6 @@ export default () => (
     <Experiences />
     <Homes />
     <Reservations />
-    <Destionations />
+    <Destinations />
   </div>
 );

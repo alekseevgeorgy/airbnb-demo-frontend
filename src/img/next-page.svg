@@ -1,0 +1,20 @@
+<svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>next-page</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1038 468)">
+<g id="next-page">
+<g id="Rectangle 3">
+<use xlink:href="#path0_fill" transform="translate(-1038 -468)" fill="#FFFFFF"/>
+</g>
+<g id="right-ic20">
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(-1022 -457)"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 20C 0 8.95431 8.95431 0 20 0L 20 0C 31.0457 0 40 8.95431 40 20L 40 20C 40 31.0457 31.0457 40 20 40L 20 40C 8.95431 40 0 31.0457 0 20L 0 20Z"/>
+<path id="path1_fill" d="M 0.292725 1.70723C 0.0401386 1.45446 -0.0584125 1.08614 0.0341954 0.741012C 0.126803 0.395883 0.396501 0.126376 0.741695 0.0340124C 1.08689 -0.0583514 1.45514 0.04046 1.70773 0.293225L 9.70273 8.29323C 10.0931 8.68373 10.0931 9.31673 9.70273 9.70723L 1.70773 17.7072C 1.45514 17.96 1.08689 18.0588 0.741695 17.9664C 0.396501 17.8741 0.126803 17.6046 0.0341954 17.2594C -0.0584125 16.9143 0.0401386 16.546 0.292725 16.2932L 7.58273 9.00023L 0.292725 1.70723Z"/>
+</defs>
+</svg>
