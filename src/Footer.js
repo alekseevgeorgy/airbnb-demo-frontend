@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import MediaQuery from "react-responsive";
 import arrow from "./img/arrow.svg";
 import logoFooter from "./img/logoFooter.svg";
 import facebook from "./img/facebook.svg";
 import twitter from "./img/twitter.svg";
 import instagram from "./img/instagram.svg";
 
-const Wrapper = styled.div`
+const Wrapper = styled.footer`
   position: relative;
   padding: 1rem 0;
   margin-top: 2.5rem;
@@ -69,7 +68,6 @@ const SelectHidden = styled.select`
 `;
 
 const CopyrightWrapper = styled.div`
-  border-top: 1px solid #f0f0f0;
   padding-top: 1rem;
   display: flex;
   align-items: center;
@@ -130,19 +128,25 @@ const Heading = styled.h3`
 `;
 
 const Line = styled.hr`
+  border: none;
+  height: 1px;
+  background-color: #484848;
   margin: 0;
-  margin-top: 2.375rem;
-  color: #484848;
+  margin-top: 0;
   opacity: 0.08;
+
+  @media screen and (min-width: 48rem) {
+    margin-top: 2.375rem;
+  }
 `;
 
 export default () => (
-  <div>
-    <MediaQuery maxDeviceWidth={767}>
-      <Wrapper>
-        <div className="container">
+  <Wrapper>
+    <div className="container">
+      <div className="row">
+        <div className="col-xs-12 col-md-3">
           <div className="row">
-            <div className="col-xs-6 col-md-3">
+            <div className="col-xs-6 col-md-12">
               <SelectWrapper>
                 <SelectHidden name="language">
                   <option value="English">English</option>
@@ -150,7 +154,7 @@ export default () => (
                 <Select>English</Select>
               </SelectWrapper>
             </div>
-            <div className="col-xs-6 col-md-3">
+            <div className="col-xs-6 col-md-12">
               <SelectWrapper>
                 <SelectHidden name="currency">
                   <option value="United States dollar">
@@ -161,10 +165,43 @@ export default () => (
               </SelectWrapper>
             </div>
           </div>
+        </div>
+        <div className="col-md-offset-1 col-md-3 col-lg-offstet-1 col-lg-3 hidden-xs">
+          <Heading>Airbnb</Heading>
+          <LinkExtended>About us</LinkExtended>
+          <LinkExtended>Careers</LinkExtended>
+          <LinkExtended>Press</LinkExtended>
+          <LinkExtended>Policies</LinkExtended>
+          <LinkExtended>Help</LinkExtended>
+          <LinkExtended>Diversity & Belongin</LinkExtended>
+        </div>
+        <div className="col-md-3 col-lg-3 hidden-xs">
+          <Heading>Discover</Heading>
+          <LinkExtended>Trust & Safety</LinkExtended>
+          <LinkExtended>Travel Credit</LinkExtended>
+          <LinkExtended>Gift Cards</LinkExtended>
+          <LinkExtended>Airbnb Citizen</LinkExtended>
+          <LinkExtended>Business Travel</LinkExtended>
+          <LinkExtended>Guidebooks</LinkExtended>
+          <LinkExtended>Airbnbmag</LinkExtended>
+        </div>
+        <div className="col-md-2 col-lg-2 hidden-xs">
+          <Heading>Hosting</Heading>
+          <LinkExtended>Why Host</LinkExtended>
+          <LinkExtended>Hospitality</LinkExtended>
+          <LinkExtended>Responsible Hosting</LinkExtended>
+          <LinkExtended>Community Center</LinkExtended>
+        </div>
+      </div>
+      <Line />
+      <div className="row between-md bottom-md">
+        <div className="col-xs-12 col-md-2">
           <CopyrightWrapper>
             <Logo src={logoFooter} />
             <Copyright>© Airbnb Inc.</Copyright>
           </CopyrightWrapper>
+        </div>
+        <div className="col-xs-12 col-md-4">
           <MiscWrapper>
             <Link>Terms</Link>
             <Link>Privacy</Link>
@@ -174,77 +211,7 @@ export default () => (
             <Social src={instagram} />
           </MiscWrapper>
         </div>
-      </Wrapper>
-    </MediaQuery>
-    <MediaQuery minDeviceWidth={768}>
-      <Wrapper>
-        <div
-          className="container"
-          style={{ "margin-left": "0", "margin-right": "0" }}
-        >
-          <div className="row between-lg">
-            <div className="col-md-3 col-lg-3">
-              <SelectWrapper>
-                <SelectHidden name="language">
-                  <option value="English">English</option>
-                </SelectHidden>
-                <Select>English</Select>
-              </SelectWrapper>
-              <SelectWrapper>
-                <SelectHidden name="currency">
-                  <option value="United States dollar">
-                    United States dollar
-                  </option>
-                </SelectHidden>
-                <Select>United States dollar</Select>
-              </SelectWrapper>
-            </div>
-            <div className="col-md-offset-1 col-md-3 col-lg-offstet-1 col-lg-3">
-              <Heading>Airbnb</Heading>
-              <LinkExtended>About us</LinkExtended>
-              <LinkExtended>Careers</LinkExtended>
-              <LinkExtended>Press</LinkExtended>
-              <LinkExtended>Policies</LinkExtended>
-              <LinkExtended>Help</LinkExtended>
-              <LinkExtended>Diversity & Belongin</LinkExtended>
-            </div>
-            <div className="col-md-3 col-lg-3">
-              <Heading>Discover</Heading>
-              <LinkExtended>Trust & Safety</LinkExtended>
-              <LinkExtended>Travel Credit</LinkExtended>
-              <LinkExtended>Gift Cards</LinkExtended>
-              <LinkExtended>Airbnb Citizen</LinkExtended>
-              <LinkExtended>Business Travel</LinkExtended>
-              <LinkExtended>Guidebooks</LinkExtended>
-              <LinkExtended>Airbnbmag</LinkExtended>
-            </div>
-            <div className="col-md-2 col-lg-2">
-              <Heading>Hosting</Heading>
-              <LinkExtended>Why Host</LinkExtended>
-              <LinkExtended>Hospitality</LinkExtended>
-              <LinkExtended>Responsible Hosting</LinkExtended>
-              <LinkExtended>Community Center</LinkExtended>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <Line />
-          <div className="row between-md bottom-md">
-            <CopyrightWrapper>
-              <Logo src={logoFooter} />
-              <Copyright>© Airbnb Inc.</Copyright>
-            </CopyrightWrapper>
-            <MiscWrapper>
-              <Link>Terms</Link>
-              <Link>Privacy</Link>
-              <Link>Site map</Link>
-              <Social src={facebook} />
-              <Social src={twitter} />
-              <Social src={instagram} />
-            </MiscWrapper>
-          </div>
-        </div>
-      </Wrapper>
-    </MediaQuery>
-  </div>
+      </div>
+    </div>
+  </Wrapper>
 );
