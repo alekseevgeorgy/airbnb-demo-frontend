@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
+import { Arrow } from "../UI/Arrow";
 import MediaQuery from "react-responsive";
 import arrow from "../../img/arrow.svg";
-import nextPage from "../../img/next-page.svg";
 
 const Container = styled.div`
   margin-right: auto;
@@ -93,21 +93,6 @@ const CardsWrapper = styled.div`
   }
 `;
 
-const Arrow = styled.button`
-  position: absolute;
-  padding: 0;
-  border-radius: 20px;
-  background: url(${nextPage}) no-repeat top center;
-  width: 40px;
-  height: 40px;
-  top: 82px;
-  left: 942px;
-  display: flex;
-  box-shadow: 0px 2px 0px rgba(72, 72, 72, 0.16);
-  border: 0.5px solid rgba(72, 72, 72, 0.2);
-  background-color: #ffffff;
-`;
-
 export default () => (
   <Container>
     <Wrapper>
@@ -140,7 +125,7 @@ export default () => (
         reviews={364}
       />
       <MediaQuery minDeviceWidth={992}>
-        <Arrow />
+        <Arrow top={82} />
       </MediaQuery>
     </CardsWrapper>
   </Container>
