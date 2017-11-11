@@ -51,8 +51,7 @@ const Select = styled.button`
     background-size: contain;
     background-repeat: no-repeat;
     width: 11px;
-    height: 5.55px;
-    transform: rotate(270deg);
+    height: 6px;
   }
 
   @media screen and (min-width: 48rem) {
@@ -88,6 +87,11 @@ const Copyright = styled.p`
   line-height: 14px;
   font-weight: 400;
   color: #636363;
+
+  @media screen and (min-width: 62rem) {
+    font-size: 15px;
+    line-height: 19px;
+  }
 `;
 
 const MiscWrapper = styled.div`
@@ -101,15 +105,24 @@ const Link = styled.a`
   text-decoration: none;
   font-family: Circular Air Book, Helvetica, sans-serif;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 15px;
   font-weight: 400;
   color: #636363;
+
+  @media screen and (min-width: 62rem) {
+    font-size: 15px;
+    line-height: 19px;
+  }
 `;
 
 const LinkExtended = Link.extend`
   display: block;
   margin-bottom: 11px;
   white-space: nowrap;
+
+  @media screen and (min-width: 62rem) {
+    margin-bottom: 8px;
+  }
 `;
 
 const Social = styled.img`
