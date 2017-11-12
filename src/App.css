@@ -1,0 +1,22 @@
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: Circular Air Book;
+  src: url(./fonts/Circular_Air-Book.woff) format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Circular Air Bold;
+  src: url(./fonts/Circular_Air-Bold.woff) format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Circular Air Light;
+  src: url(./fonts/Circular_Air-Light.woff) format("woff");
+  font-weight: 300;
+}
